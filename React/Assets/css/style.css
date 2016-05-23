@@ -1,0 +1,15 @@
+
+.recipe-title{
+	color: orange;
+	border: 2px orange solid;
+
+}
+.recipe-image{
+	height:250px;
+	width:250px;
+	border: 2px yellow solid;
+
+}
+.recipe-box{
+	border: 2px black solid;
+}

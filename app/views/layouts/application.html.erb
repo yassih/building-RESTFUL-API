@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Recipe App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <% unless params[:nojs] %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag :cocoon%>
+
+  <% end %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<h1>My Awesome Recipes!</h1>
+	
+
+	<%= yield %>	
+	
+</body>
+</html>
