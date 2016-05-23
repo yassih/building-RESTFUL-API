@@ -2,10 +2,6 @@ require "application_responder"
 
 
 class ApplicationController < ActionController::Base
-	config.action_dispatch.default_headers.merge!({
-  'Access-Control-Allow-Origin' => '*',
-  'Access-Control-Request-Method' => '*'
-})
 
 	before_filter :add_allow_credentials_headers
 
