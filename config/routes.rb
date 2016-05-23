@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static/home'
+
   namespace :api do
     resources :recipes, only: [:index, :show, :destroy, :create, :update], :defaults => { :format => 'json' }
     resources :ingredients, only: [:index], :defaults => {:format => 'json'}
@@ -10,7 +12,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'recipes#index'
+   root 'static#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
