@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+# ruby '2.2.4'
 gem 'cocoon'
 gem 'responders'
 gem 'react-rails', '~> 1.5.0'
